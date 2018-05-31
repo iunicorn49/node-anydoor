@@ -1,0 +1,19 @@
+{
+  "name": "anydoor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iunicorn49/node-anydoor.git"
+  },
+  "author": "iunicorn49",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iunicorn49/node-anydoor/issues"
+  },
+  "homepage": "https://github.com/iunicorn49/node-anydoor#readme",
+  "description": ""
+}

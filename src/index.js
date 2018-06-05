@@ -1,17 +1,12 @@
 const http = require('http')
-const { PORT, HOST_NAME } = require('./config.js')
+const path = require('path')
+const { PORT, HOST_NAME, ROOT } = require('./config')
+const { stat, readdir, createReadStream } = require('./tools')
+const route = require('./route')
 
 http.createServer((req, res) => {
-	res.statusCode = 200
-	res.setHeader('Content-Type', 'text/html')
-	res.write('<html>')
-	res.write('<body>')
-	res.write('<h1>')
-	res.write('what the fuck')
-	res.write('</h1>')
-	res.write('</body>')
-	res.write('</html>')
-	res.end()
+	const filePath = path.join(ROOT, req.url)
+	route(req, res, filePath)
 }).listen(PORT, HOST_NAME, () => {
 	console.log(`服务器已启动: http://${HOST_NAME}:${PORT}`)
 })

@@ -15,5 +15,9 @@
     "url": "https://github.com/iunicorn49/node-anydoor/issues"
   },
   "homepage": "https://github.com/iunicorn49/node-anydoor#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "mime": "^2.3.1"
+  }
 }
